@@ -1,1 +1,172 @@
+/* 全局樣式重置與設定 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0b0c10;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+/* 固定導覽列 Header (Sticky / Fixed) */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(15, 12, 25, 0.95);
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    z-index: 1000;
+    border-bottom: 1px solid #2a2040;
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #c5a059;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #a0a0b0;
+    font-weight: bold;
+    font-size: 14px;
+    padding-bottom: 5px;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+nav a:hover {
+    color: #a855f7;
+    border-bottom: 2px solid #a855f7;
+}
+
+/* 內容區塊頁面間距 (留出 Header 高度) */
+.content-section {
+    padding: 100px 40px 60px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 32px;
+    font-family: Georgia, serif;
+    color: #d8b4fe;
+    margin-bottom: 20px;
+    border-left: 4px solid #9333ea;
+    padding-left: 12px;
+}
+
+/* 網頁主視覺網格 */
+.grid-container {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.text-column, .image-column {
+    flex: 1;
+}
+
+.character-img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(147, 51, 234, 0.2);
+    border: 1px solid #3b0764;
+}
+
+/* 圓形頭像陣容推薦樣式 (Team Section) */
+.team-container {
+    display: flex;
+    gap: 25px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120px;
+}
+
+.avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #9333ea;
+    box-shadow: 0 0 12px rgba(147, 51, 234, 0.4);
+    transition: transform 0.3s ease;
+}
+
+.avatar:hover {
+    transform: scale(1.08);
+    border-color: #c5a059;
+}
+
+.member-name {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #e2e8f0;
+}
+
+.member-role {
+    font-size: 12px;
+    color: #a0a0b0;
+}
+
+/* 裝備與武器表格樣式 */
+.table-container {
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #13111c;
+    border: 1px solid #2e2640;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 16px 20px;
+    text-align: left;
+    border-bottom: 1px solid #231e30;
+}
+
+thead th {
+    background-color: #1e172e;
+    color: #c5a059;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+tbody tr:hover {
+    background-color: #1c162b;
+}
+
+.tag {
+    display: inline-block;
+    padding: 2px 8px;
+    background-color: #581c87;
+    color: #f3e8ff;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+}

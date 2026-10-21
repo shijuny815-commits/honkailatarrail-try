@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>崩壞：星穹鐵道 - 黃泉 (Acheron)</title>
+    <!-- 引入獨立的 CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. 固定頁首導覽列 (Sticky Header) -->
+    <header>
+        <div class="logo">HONKAI: STAR RAIL</div>
+        <nav>
+            <a href="https://hsr.hoyoverse.com/" target="_blank">官網首頁</a>
+            <a href="https://hsr.hoyoverse.com/news" target="_blank">活動資訊</a>
+            <a href="#about">角色簡介</a>
+            <a href="#team">陣容推薦</a>
+            <a href="#gear">裝備光錐</a>
+        </nav>
+    </header>
+
+    <!-- 2. 角色簡介區塊 (含網路圖片) -->
+    <section id="about" class="content-section">
+        <h2>黃泉 (Acheron)</h2>
+        <div class="grid-container">
+            <div class="text-column">
+                <p style="color: #a855f7; font-weight: bold; letter-spacing: 1px; margin-bottom: 10px;">命途：虛無 | 屬性：雷</p>
+                <p>自稱「巡海遊俠」的神秘旅人，本名不詳。身佩一柄長刀，獨行於銀河之中。</p>
+                <p>性格淡漠寡言，劍訊如迅雷般凌厲，卻常以刀鞘招架戰鬥，不輕易拔刀出鞘。其終結技無需消耗能量，而是透過為敵方施加負面效果來積累「殘夢」疊層，觸發毀滅性的打擊。</p>
+            </div>
+            <div class="image-column">
+                <!-- 使用維基百科上的黃泉官方立繪連結 -->
+                <img class="character-img" src="https://upload.wikimedia.org/wikipedia/en/a/a7/Acheron_%22Honkai_Star_Rail%22.png" alt="黃泉 Acheron 官方立繪">
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. 隊伍推薦區塊 (使用圓形頭像) -->
+    <section id="team" class="content-section">
+        <h2>推薦隊伍配置</h2>
+        <p>黃泉的天賦需要隊友頻繁施加「負面效果」以快速疊加「殘夢」，因此建議搭配 1~2 名虛無命途隊友。</p>
+
+        <div class="team-container">
+            <!-- 隊員 1: 黃泉 -->
+            <div class="team-member">
+                <img class="avatar" src="https://static.wikia.nocookie.net/houkai-star-rail/images/c/c2/Character_Acheron_Icon.png" alt="黃泉">
+                <span class="member-name">黃泉</span>
+                <span class="member-role">主 DPS</span>
+            </div>
+            <!-- 隊員 2: 椒丘 -->
+            <div class="team-member">
+                <img class="avatar" src="https://static.wikia.nocookie.net/houkai-star-rail/images/d/df/Character_Jiaoqiu_Icon.png" alt="椒丘">
+                <span class="member-name">椒丘</span>
+                <span class="member-role">核心輔助 (負面)</span>
+            </div>
+            <!-- 隊員 3: 佩拉 -->
+            <div class="team-member">
+                <img class="avatar" src="https://static.wikia.nocookie.net/houkai-star-rail/images/b/b8/Character_Pela_Icon.png" alt="佩拉">
+                <span class="member-name">佩拉</span>
+                <span class="member-role">減防輔助</span>
+            </div>
+            <!-- 隊員 4: 砂金 -->
+            <div class="team-member">
+                <img class="avatar" src="https://static.wikia.nocookie.net/houkai-star-rail/images/c/c8/Character_Aventurine_Icon.png" alt="砂金">
+                <span class="member-name">砂金</span>
+                <span class="member-role">生存 / 追擊負面</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. 裝備與光錐推薦區塊 -->
+    <section id="gear" class="content-section">
+        <h2>光錐與遺器推薦</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>類別</th>
+                        <th>名稱</th>
+                        <th>推薦理由</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="tag">專屬光錐</span></td>
+                        <td><strong>行於流逝的岸</strong></td>
+                        <td>提供大量的暴擊傷害，並能使裝備者施加「泡影」負面狀態，加快終結技疊層。</td>
+                    </tr>
+                    <tr>
+                        <td><span class="tag">備選光錐</span></td>
+                        <td><strong>晚安與睡顏</strong></td>
+                        <td>根據敵方身上的負面效果數量大幅提升造成的傷害，非常契合黃泉隊伍。</td>
+                    </tr>
+                    <tr>
+                        <td><span class="tag">外圈遺器</span></td>
+                        <td><strong>死水深淵的死徒 (4件套)</strong></td>
+                        <td>針對受負面效果影響的敵人大幅提升暴擊率與暴擊傷害，為黃泉首選。</td>
+                    </tr>
+                    <tr>
+                        <td><span class="tag">內圈飾品</span></td>
+                        <td><strong>出雲顯世與高天神國 (2件套)</strong></td>
+                        <td>隊伍中有同命途（虛無）角色時，額外提升 12% 暴擊率，極度契合黃泉組隊需求。</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+</body>
+</html>
